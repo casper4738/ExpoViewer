@@ -2,8 +2,8 @@
   "name": "only-view",
   "version": "0.0.0",
   "scripts": {
-    "setup-selenium": "webdriver-manager update  --versions.chrome  84.0.4147.89",
-    "start-selenium": "webdriver-manager start --standalone --detach --versions.chrome  84.0.4147.89",
+    "setup-selenium": "webdriver-manager update  --versions.chrome  86.0.4240.198",
+    "start-selenium": "webdriver-manager start --standalone --detach --versions.chrome  86.0.4240.198",
     "stop-selenium": "webdriver-manager shutdown",
     "view": "codeceptjs run-workers 2 --debug",
     "all": "codeceptjs run --steps --debug"

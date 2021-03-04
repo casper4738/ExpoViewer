@@ -1,3 +1,10 @@
+install nodejs
+install java
+npm install
+setting java path
+
+
+
 #### Prerequisites
 1. Run `npm install` to install the dependencies
 

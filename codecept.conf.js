@@ -8,7 +8,7 @@ exports.config = {
       require: './scenario/custom_helper.js',
     },
     Protractor: {
-      url: 'https://www.youtube.com',
+      url: 'https://expo.bca.co.id',
       driver: 'hosted',
       browser: 'chrome',
       restart: true,
@@ -18,9 +18,12 @@ exports.config = {
         "chromeOptions": {
           "args": [
             // "--incognito",
-            "--headless",
+            // "--headless",
+            '--disable-extensions',
             "--disable-gpu",
-            "--disable-cache"
+            "--disable-cache",
+            '--disable-web-security',
+            '--disable-dev-shm-usage'
           ]
         }
       }
@@ -38,10 +41,10 @@ exports.config = {
       enabled: true
     }
   },
-  multiple: {
-    parallel: {
-      // Splits tests into 2 chunks
-      chunks: 2
-    }
-  }
+  // multiple: {
+  //   parallel: {
+  //     // Splits tests into 2 chunks
+  //     chunks: 2
+  //   }
+  // }
 };
